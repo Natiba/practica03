@@ -65,8 +65,12 @@ p {
     /* ====  GREATER ==== */
 
 .greaterBody {
-    background-image: url(./img/race.jpeg);
+    background-image: url(./img/numbers.webp);
     }
+
+.greaterH2 {
+    color:rgb(241, 241, 111)
+}
 
 /* ====  FACTORIAL ==== */
 
