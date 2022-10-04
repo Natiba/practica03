@@ -30,7 +30,7 @@ for (let i = 1; i <= numberUser; i++) {
     //console.log(nums);
 
     greaterOutput.innerHTML = `
-        Your group number is: <b>${nums}</b><br>
+        Your group number is: <b>${nums}</b><br><br>
         The <i>'younger'</i> number is: <b>${nums[0]}</b>`;
   } else {
 

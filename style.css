@@ -1,99 +1,128 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== INDEX ==== */
+
+.main {
+    background-image: url(./img/index.jpg);
+    padding: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(230, 107, 85);
+}
+
+.forContainer h3 {
+    color: rgb(78, 157,150);
+    padding: 2% 1%;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+ol>li {
+    padding: .2%;
+    color: rgb(90, 115, 137);
+}
+
+ol>li>a {
+    text-decoration: none;
+}
+
+ol>li>a:hover {
+    color: rgb(194, 77, 64);
 }
 
 /* ==== BUCLE FOR ==== */
 .bFor {
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .container {
-    background-color: rgba(255, 0, 0, 0.315);
-    width: 100%;
-    height: 100vh;
+  background-color: rgba(255, 0, 0, 0.315);
+  width: 100%;
+  height: 100vh;
 }
 
 h2 {
-    color: rgb(221, 114, 110);
-    font-size: 3em;
-    padding: 3%;
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: .2em;
+  color: rgb(221, 114, 110);
+  font-size: 3em;
+  padding: 3%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 p {
-    color: #fff;
-    font-size: 2em;
-    padding: 1% 4%;
+  color: #fff;
+  font-size: 2em;
+  padding: 1% 4%;
 }
 
 /* ====  ODD ==== */
 
 .oddBody {
-    background-image: url(./img/numbers.webp);
-    }
+  background-image: url(./img/numbers.webp);
+}
 
 .oddNum {
-        color: rgb(241, 241, 111);
-    }
+  color: rgb(241, 241, 111);
+}
 
 .containerOdd {
-    background-color: rgba(78, 88, 173, 0.315);
+  background-color: rgba(78, 88, 173, 0.315);
 }
 
 /* ====  PLAYLIST ==== */
 
 .playBody {
-    background-image: url(./img/playlist.jpg);
-    width: 100%;
-    height: 100%;
-    }
-   
-    
-.playlist {
-    color: rgb(94, 172, 211);
-    margin-left: -40%
+  background-image: url(./img/playlist.jpg);
+  width: 100%;
+  height: 100%;
 }
 
+.playlist {
+  color: rgb(94, 172, 211);
+  margin-left: -40%;
+}
 
-    /* ====  GREATER ==== */
+/* ====  GREATER ==== */
 
 .greaterBody {
-    background-image: url(./img/numbers.webp);
-    }
+  background-image: url(./img/numbers.webp);
+}
 
 .greaterH2 {
-    color:rgb(241, 241, 111)
+  color: rgb(241, 241, 111);
 }
 
 /* ====  FACTORIAL ==== */
 
 .factoBody {
-    background-image: url(./img/factorial.png);
-    }
+  background-image: url(./img/factorial.png);
+}
 
 .factorialH2 {
-    text-align: right;
-    color: rgb(141, 91, 173);
-    padding-right: 15%;
+  text-align: right;
+  color: rgb(141, 91, 173);
+  padding-right: 15%;
 }
 
 /* ==== RACE  ==== */
 
 .raceBody {
-    background-image: url(./img/race.jpeg);
-    }
+  background-image: url(./img/race.jpeg);
+}
 
 /* ==== STONE-PAPER-SCISSOR  ==== */
 
 .stoneBody {
-    background-image: url(./img/stone.webp);
-    }
-
-
+  background-image: url(./img/stone.webp);
+}
