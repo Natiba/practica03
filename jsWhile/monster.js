@@ -39,9 +39,9 @@ let monsterMessage = document.querySelector("#monsterMessage");
 let potionMessage = document.querySelector("#potionMessage");
 let leaveMessage = document.querySelector("#leaveMessage");
 
-// ATTACK MONSTER
+// ATTACK THE MONSTER
 
-function monsterAttack() {
+function playerAttack() {
   for (let i = 1; i <= monsterLife; i++) {
     let randomAttack = Math.floor(Math.random() * maxPlayerAttack) + 1; // Returns a random integer from 1 to 5 (maxPlayerAttack):
     monsterLifeRes = monsterLife - randomAttack;
@@ -100,9 +100,30 @@ searchPotion()
 
 // LEAVE:
 
-if (playerLife == 0 || monsterLife === 0) {
+if (playerLife === 0 || monsterLife === 0) {
 leaveMessage.innerHTML = `
 Sorry, the game is OVER <br>`;
 let playAgain = prompt("Do you want to play again? 'Yes' or 'No'").toLowerCase();
 }
 // Una pregunta al jugador de si quiere continuar jugando o salir?
+
+// ATTACK THE PLAYER
+
+function monsterAttack() {
+  for (let i = 1; i <= monsterLife; i++) {
+    let randomAttack = Math.floor(Math.random() * maxPlayerAttack) + 1; // Returns a random integer from 1 to 5 (maxPlayerAttack):
+    monsterLifeRes = monsterLife - randomAttack;
+    monsterLife = monsterLifeRes;
+    console.log(randomAttack);
+    console.log(monsterLifeRes);
+
+    if (monsterLifeRes > 0) {
+      monsterMessage.innerHTML += `
+          In this ${i} lap, the monster has ${monsterLifeRes} lives <br>`;
+    } else {
+      monsterMessage.innerHTML = `
+          The monster has no more lives`;
+    }
+  }
+}
+monsterAttack();
